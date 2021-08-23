@@ -1,5 +1,5 @@
 {
-  "name": "cypress-cucumber-preprocessor",
+  "name": "atosTemplate",
   "version": "0.0.0-development",
   "description": "Run gherkin-syntaxed specs with cypress.io",
   "main": "lib/index.js",
@@ -13,12 +13,6 @@
   },
   "bin": {
     "cypress-tags": "cypress-tags.js"
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "lint-staged && jest"
-    }
   },
   "lint-staged": {
     "*.js": [
@@ -60,7 +54,8 @@
   },
   "devDependencies": {
     "commitizen": "^4.2.1",
-    "cypress": "^5.1.0",
+    "cypress": "^8.3.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
@@ -68,7 +63,6 @@
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.3.0",
     "jest": "^26.4.2",
     "lint-staged": "^10.3.0",
     "prettier": "2.1.2",
